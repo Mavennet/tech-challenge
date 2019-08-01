@@ -1,8 +1,8 @@
-#Developer Coding Challenge
+#Front-end Developer Coding Challenge
 
 ## Goal:
 
-#### Develop a Frontend or backend app that allows a user to see their albums and its' associated photographs
+#### Develop a Front-end app that allows a user to see their albums and its' associated photographs
 
 - [ ] Fork this repo. Keep it public until we have been able to review it.
 - [ ] Web : JS/React/Node.js/any language comfortable
@@ -20,6 +20,7 @@ Suggestion:
 - /users to fetch the users
 - /albums to fetch the albums
 - /photos associated with albums
+- Follow Clean Code and the SOLID Principles
 
 
 Be creative for UI design 
