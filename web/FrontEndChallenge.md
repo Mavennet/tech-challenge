@@ -2,7 +2,7 @@
 
 ## Goal:
 
-#### Develop a Frontend or backend app that allows a user to see their albums and its' associated photographs
+#### Develop a Frontend app that allows a user to see their albums and its' associated photographs
 
 - [ ] Fork this repo. Keep it public until we have been able to review it.
 - [ ] Web : JS/React/Node.js/any language comfortable
@@ -20,7 +20,7 @@ Suggestion:
 - /users to fetch the users
 - /albums to fetch the albums
 - /photos associated with albums
-
+- Make sure to follow the Clean Code principles
 
 Be creative for UI design 
 
