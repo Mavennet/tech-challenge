@@ -5,16 +5,23 @@ Default port is 3000, so after run navigate to http://localhost:3000
 
 There are several CRUD endpoints in the REST like style:
 
-1) GET /users
-   GET /users/1
-  ...etc
+1) 
+```
+    GET /users
+    GET /users/1
+    ...etc
+  ```
 
-2) POST /auth/login
+2) 
+```
+POST /auth/login
+```
    for auth purposes.
     I set the default password in order to simplicity for all users: Qwerty001
 
    request example:
 
+```
    POST /auth/login HTTP/1.1
   Host: localhost:3000
   Content-Type: application/x-www-form-urlencoded
@@ -29,6 +36,7 @@ There are several CRUD endpoints in the REST like style:
   cache-control: no-cache
 
   userName=Bret&password=Qwerty001
+```
 
 3) GET /albums
   you should pass jwt auth token within request
