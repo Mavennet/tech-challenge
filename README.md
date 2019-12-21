@@ -38,10 +38,16 @@ POST /auth/login
   userName=Bret&password=Qwerty001
 ```
 
-3) GET /albums
+3)
+```
+GET /albums
+```
   you should pass jwt auth token within request
 
-4) GET /photos
+4)
+```
+GET /photos
+```
 you should pass jwt auth token within request
 
 Nest is an MIT-licensed open source project. 
