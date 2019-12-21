@@ -10,19 +10,19 @@ There are several CRUD endpoints in the REST like style:
     GET /users
     GET /users/1
     ...etc
-  ```
+```
 
 2) 
-```
-POST /auth/login
-```
+    ```
+    POST /auth/login
+    ```
    for auth purposes.
     I set the default password in order to simplicity for all users: Qwerty001
 
    request example:
 
 ```
-   POST /auth/login HTTP/1.1
+  POST /auth/login HTTP/1.1
   Host: localhost:3000
   Content-Type: application/x-www-form-urlencoded
   User-Agent: PostmanRuntime/7.19.0
@@ -39,16 +39,16 @@ POST /auth/login
 ```
 
 3)
-```
-GET /albums
-```
+   ```
+   GET /albums
+   ```
   you should pass jwt auth token within request
 
 4)
-```
-GET /photos
-```
-you should pass jwt auth token within request
+    ```
+    GET /photos
+    ```
+    you should pass jwt auth token within request
 
 Nest is an MIT-licensed open source project. 
 
