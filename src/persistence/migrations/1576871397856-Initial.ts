@@ -26,7 +26,11 @@ export class Initial1576871397856 implements MigrationInterface {
     );
     const albumsDb = await getRepository(Album).save(albums);
 
-    photos.forEach((photo, index) => (photo.album = albumsDb[index % 5]));
+    photos.forEach((photo, index) => {
+      const photoAlbum = albumsDb[index % 5];
+      photo.user = photoAlbum.user;
+      photo.album = photoAlbum;
+    });
     await getRepository(Photo).save(photos);
   }
 

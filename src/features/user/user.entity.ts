@@ -4,6 +4,7 @@ import { Entity, OneToOne, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
 import { PrimaryGeneratedColumn } from 'typeorm';
 import { Column } from 'typeorm';
 import { Album } from '../album/album.entity';
+import { Photo } from '../photo/photo.entity';
 
 @Entity()
 export class User {
@@ -40,4 +41,10 @@ export class User {
     album => album.user,
   )
   albums: Album[];
+
+  @OneToMany(
+    type => Photo,
+    photo => photo.user,
+  )
+  photos: Photo[];
 }
