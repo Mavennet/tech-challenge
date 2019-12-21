@@ -7,6 +7,16 @@ import { Crud } from '@nestjsx/crud';
   model: {
     type: User,
   },
+  query: {
+    join: {
+      address: {
+        eager: true,
+      },
+      company: {
+        eager: true,
+      },
+    },
+  },
 })
 @Controller('users')
 export class UserController {

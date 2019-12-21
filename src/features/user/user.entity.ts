@@ -1,8 +1,10 @@
 import { Address } from '../address/address.entity';
 import { Company } from '../company/company.entity';
-import { Entity, OneToOne, JoinColumn, ManyToOne } from 'typeorm';
+import { Entity, OneToOne, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
 import { PrimaryGeneratedColumn } from 'typeorm';
 import { Column } from 'typeorm';
+import { Album } from '../album/album.entity';
+import { Photo } from '../photo/photo.entity';
 
 @Entity()
 export class User {
@@ -33,4 +35,16 @@ export class User {
     company => company.users,
   )
   company: Company;
+
+  @OneToMany(
+    type => Album,
+    album => album.user,
+  )
+  albums: Album[];
+
+  @OneToMany(
+    type => Photo,
+    photo => photo.user,
+  )
+  photos: Photo[];
 }
