@@ -6,3 +6,4 @@ Please fork the repo and fulfill either the FE or the BE challenge as defined in
 
 - [Backend](./Challenge/Backend/README.md)
 - [Frontend](./Challenge/Frontend/README.md)
+- [Data](./Challenge/Data/README.md)
