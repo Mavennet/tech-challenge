@@ -16,7 +16,7 @@ Use data from https://jsonplaceholder.typicode.com/ to setup a JSON file that wi
 
 Suggested Frameworks:
 
-- NestJS
+- [NestJS](https://nestjs.com/)
 
 #### Develop a Back-end app that allows a user to see their albums and its' associated photographs
 
